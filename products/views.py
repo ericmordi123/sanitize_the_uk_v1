@@ -9,6 +9,10 @@ from .models import Product, Category
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
+    scene = request.session.get('scene', 'e')
+    if scene == 'e':
+        messages.info(request, f'book a consultation today!')
+        request.session['scene']= 's'
 
     products = Product.objects.all()
     query = None
