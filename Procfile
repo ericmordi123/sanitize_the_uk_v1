@@ -1,1 +1,1 @@
-web: gunicorn sanitize_the_uk_v1.wsgi:application
+web: gunicorn sanitize-the-uk.wsgi:application
