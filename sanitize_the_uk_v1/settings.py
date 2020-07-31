@@ -26,7 +26,7 @@ SECRET_KEY = 'n%1)*+qrtn(pondj^-ox7l)dw##7v1y=fxodbjgl+(y6r$_tya'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sanitize-the-uk', 'localhost']
+ALLOWED_HOSTS = ['sanitize-the-uk.herokuapp.com', 'localhost']
 
 
 # Application definition
