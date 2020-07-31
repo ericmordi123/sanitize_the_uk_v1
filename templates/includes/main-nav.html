@@ -19,29 +19,26 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="about-link">
             <a href="{% url 'about' %}" class="dropdown-item">About Us</a>
+            <a href="{% url 'about' %}" class="dropdown-item">Sanitisation</a>
+            <a href="{% url 'about' %}" class="dropdown-item">The Proof</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Homeware
+                Consultation
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Homeware</a>
+            <div class="dropdown-menu border-0" aria-labelledby="contact-link">
+                <a href="{% url 'contact' %}" class="dropdown-item">Book a Consultation</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+                Contact us 
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+            <div class="dropdown-menu border-0" aria-labelledby="contact-link">
+                <a href="{% url 'contact' %}" class="dropdown-item">Contact us </a>
             </div>
         </li>
     </ul>
