@@ -4,15 +4,12 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
+from .forms import ProductForm
 
 # Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-    scene = request.session.get('scene', 'e')
-    if scene == 'e':
-        messages.info(request, f'book a consultation today!')
-        request.session['scene']= 's'
 
     products = Product.objects.all()
     query = None
@@ -71,3 +68,14 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
