@@ -26,7 +26,7 @@ SECRET_KEY = 'n%1)*+qrtn(pondj^-ox7l)dw##7v1y=fxodbjgl+(y6r$_tya'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sanitize-the-uk', 'localhost']
 
 
 # Application definition
@@ -119,19 +119,17 @@ WSGI_APPLICATION = 'sanitize_the_uk_v1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://slctnvbwpayuof:c34bebb5d046e05002c983f36e493d866ff0b30eac3c5cee939400657a30a46d@ec2-54-75-229-28.eu-west-1.compute.amazonaws.com:5432/d4r9jt97ov0pj8')
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
