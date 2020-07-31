@@ -1,39 +1,52 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# SanitizeTheUk
 
-Welcome Eric Mordi,
+Link to final version []
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Full Stack Frameworks With Djagno Project - Milestone Project 4
+The purpose of this project, is to build a full-stack site. I have chosen to rebuild my businesses website [SanitizeUk](www.sanitizetheuk.com) right now it is a basic godaddy website and I would like to build a better more robust site that allowas users to log in view previous orders make purchases and also book a consultation.
+as I do not have much time I aim to create the minimum viable product that has all the neccessary features and a base wibsite i can continue to build on and improve 
+## User Journey And Testing 
+| User Journey  | User Flow | Manual Testing |
+| ------------- | ------------- | -------------------- |
+| - As a User I want the ability to add any product for sanitisation to my bag  | From homepage click on products either a ctaegory or all products link > you will then be forwarded to the product page > hit enter on a product of interest > you are forwarded to product details page > add to bag | Pass |
+| - As a User I want to be able to search for a specific product in the store  From homepage click on searchbar> type in product you would like to search for > hit enter > you are forwarded to product details | Pass |
+| - As a User I want the ability to sign/register my own account where I can see previous orders and my personal account | From homepage click on my account login > you are then forwarded to the account register/login page > fill in info > you are then signed in as user | Pass |
+| - As a User I want the ability to purchase a product | From homepage click on products > you are then forwarded to products pagee > select a product/products > eithe click secoure checkou or the bag icon in top right hand corner click complete order and make payment  | Pass |
+| - As a User I want the ability to book a consultation | From homepage click on consultation > fill in contact form and send | Pass |
+| - As a SuperUser I want to be able to delete and edit products in the store> sign in and go to product management > you can delete/edit and add products | Pass |
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The user joureny highlights all of the apps main feaures. Manual testing was done by following the user flow with mouse and keybord. In addition to this I also tested the app on all main browsers and devices to make sure the app is working corrctly 
+and the user a great experience no matter what devise is being used to access the app. Browsers include: Firefox, Chrome, Internet explorer, yandex browser and Safari. Devices include: Iphone,Samsung phones an ipad and my laptop.
 
-`python3 -m http.server`
+## Technologies used 
+* I used [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) to create the base of my project.
+* I used [CSS3](http://www.css3.info/) in order to implement custom styling in my project.
+* I used [Python3](https://www.python.org/) 3 for the backend of my project along with the Flask Framework.
+* I used [jQuery](https://jquery.com/) to simplify my JavaScript.
+* I used [Jinja2](https://jinja.palletsprojects.com/en/2.10.x/) templating language to keep code clean.
+* I used [Cloudinary](https://cloudinary.com/) to store high resolution images 
+* I used [Heroku](https://en.wikipedia.org/wiki/Heroku) to deploy my application.
+* I used [MoqUps](https://app.moqups.com/sign-up) to create the mockup version of my website, that can be found Here.
+* I used [stripe](https://stripe.com/gb/) (a password-hashing function) to further protect private user information
 
-A blue button should appear to click: *Make Public*,
+### Validator used to check my code:
 
-Another blue button should appear to click: *Open Browser*.
+- [W3C HTML](https://validator.w3.org/)
+- [W3C CSS3](https://jigsaw.w3.org/css-validator/)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Things to improve in the Future
+- Add more products for a user to purchase 
+- Set up a monthly subscription signup to be up to date with all our deals and offers 
 
-A blue button should appear to click: *Make Public*,
+## DEPLOYMENT
+All code throughtout the build process, every bug fix, all corrections and ammendments have been commited to GitHub using [Version Control]().
 
-Another blue button should appear to click: *Open Browser*.
+All my commits and the full code for my project can be found on my GitHub Repository [found here]()
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+All work has been commited and deployed to Heroku [found here]()
 
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### content
+The pictures for the app was precured from [unsplash](https://unsplash.com/) a great platform for good quality images
+- (https://www.thespruceeats.com/quick-guide-to-distilled-spirits-760713)
+- (https://www.youtube.com/watch?v=05tut5WbyFA)adding contact forms

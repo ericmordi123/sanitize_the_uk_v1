@@ -28,13 +28,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #B0CBEA;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #B0CBEA;
     color: white;
 }
 
@@ -47,7 +47,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #B0CBEA;
     color: white !important;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #B0CBEA !important;
 }
 
 .bg-black {
@@ -101,17 +101,22 @@ a.category-badge > span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
+/* ------------------------------- contact fomr */
+.container{
+             padding-top: 15px;
+        }
 
-input[name='q']::placeholder {
-    color: #aab7c4;
-}
+    #id_name{
+        width:100%
+        }
 
-.heading {
-    text-align: center;
-    color: red;
-    padding: 40px;
-}
+    #id_message{
+        width:100%
+        }
 
+    #id_email{
+        width:100%
+        }
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -135,7 +140,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #B0CBEA;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -197,7 +202,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #B0CBEA;
     border-radius: 0;
 }
 
@@ -221,8 +226,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #B0CBEA;
+    border: 1px solid #B0CBEA;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
