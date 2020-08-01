@@ -1,10 +1,10 @@
 # SanitizeTheUk
 
-Link to final version []
+Link to final version [found here]( https://sanitize-the-uk.herokuapp.com/)
 
 ## Full Stack Frameworks With Djagno Project - Milestone Project 4
 The purpose of this project, is to build a full-stack site. I have chosen to rebuild my businesses website [SanitizeUk](www.sanitizetheuk.com) right now it is a basic godaddy website and I would like to build a better more robust site that allowas users to log in view previous orders make purchases and also book a consultation.
-as I do not have much time I aim to create the minimum viable product that has all the neccessary features and a base wibsite i can continue to build on and improve 
+as I do not have much time I aim to create the minimum viable product that has all the neccessary features and a base website I can continue to build on and improve.
 ## User Journey And Testing 
 | User Journey  | User Flow | Manual Testing |
 | ------------- | ------------- | -------------------- |
@@ -42,9 +42,9 @@ and the user a great experience no matter what devise is being used to access th
 ## DEPLOYMENT
 All code throughtout the build process, every bug fix, all corrections and ammendments have been commited to GitHub using [Version Control]().
 
-All my commits and the full code for my project can be found on my GitHub Repository [found here]()
+All my commits and the full code for my project can be found on my GitHub Repository [found here](https://github.com/ericmordi123/sanitize_the_uk_v1)
 
-All work has been commited and deployed to Heroku [found here]()
+All work has been commited and deployed to Heroku [found here]( https://sanitize-the-uk.herokuapp.com/)
 
 ### content
 The pictures for the app was precured from [unsplash](https://unsplash.com/) a great platform for good quality images
