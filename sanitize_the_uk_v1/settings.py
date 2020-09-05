@@ -26,7 +26,7 @@ STATIC_URL = '/static/'
 SECRET_KEY = os.environ.get('SECRET_KEY', ''),
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['sanitize-the-uk.herokuapp.com', 'localhost']
 
@@ -186,6 +186,12 @@ if 'USE_AWS' in os.environ:
 
 
 if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'sanitize-the-uk'
     AWS_S3_REGION_NAME = 'us-east-1'
