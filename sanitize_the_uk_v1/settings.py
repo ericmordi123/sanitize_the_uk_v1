@@ -184,14 +184,6 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
 
-
-if 'USE_AWS' in os.environ:
-    # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'sanitize-the-uk'
     AWS_S3_REGION_NAME = 'us-east-1'
@@ -222,4 +214,4 @@ DEFAULT_FROM_EMAIL = 'info@sanitizetheuk.com'
 # Django send grid email contact (needs to be hidden)
 EMAIL_BACKEND = "sendgrid backend.SendgridBackend"
 SENDGRID_API_KEY = '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'
-SENDGRID_SANDBOX_MODE_IN_DEBUG=False
+SENDGRID_SANDBOX_MODE_IN_DEBUG=False 
