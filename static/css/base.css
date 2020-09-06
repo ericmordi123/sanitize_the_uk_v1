@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/un-covid-19-response-img.jpg') no-repeat center center fixed;
+    background: url('https://sanitize-the-uk.s3.eu-west-2.amazonaws.com/media/un-covid-response-img.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
