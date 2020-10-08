@@ -106,8 +106,6 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -212,6 +210,15 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'info@sanitizetheuk.com'
 
 # Django send grid email contact (needs to be hidden)
-EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
-SENDGRID_API_KEY = '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'
-SENDGRID_SANDBOX_MODE_IN_DEBUG=False 
+# EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+# SENDGRID_API_KEY = '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'
+# SENDGRID_SANDBOX_MODE_IN_DEBUG=False
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_API_KEY')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
