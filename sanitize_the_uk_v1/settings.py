@@ -212,6 +212,6 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'info@sanitizetheuk.com'
 
 # Django send grid email contact (needs to be hidden)
-EMAIL_BACKEND = "sendgrid backend.SendgridBackend"
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
 SENDGRID_API_KEY = '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'
 SENDGRID_SANDBOX_MODE_IN_DEBUG=False 
